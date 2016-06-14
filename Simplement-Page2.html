@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  
+   <title>Maquette - Simplement</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+
+<style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: <!--#f5f6f7-->#1abc9c;
+	  padding: 10px;
+  }
+
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+form{
+	font-size: 15px;
+	color: #696969}	
+</style>
+  
+ 
+<!-- Navigation bar top of page -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Qui suis-je...</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	  
+        <li><a href="#">id&eacute;es</a></li>
+        <li><a href="#">adresses</a></li>
+        <li><a href="Simplement.html" target="_blank">accueil</a></li>
+    </div>
+  </div>
+</nav> 
+  
+ <div id="form">
+ 
+ 	<p>Envoyez-nous vos commentaires:</p>
+	
+<!--		<form method="post" action="annet@videotron.ca">-->
+		<form action="MAILTO:annet@videotron.ca" method="post" enctype="text/plain">	
+
+			<p>	<label for="courriel">Adresse courriel:</label></br>	
+					<input type="email" id="courriel" name="email" size="35"></br>
+			</p>
+		
+			<p>	<label for="name">Votre nom:</label></br>	
+					<input type="text" id="name" name="nom" size="35"></br>
+			</p>
+	
+			<p>	<label for="comment">Commentaires:</label></br>
+					<textarea name="comment" rows="4" cols="75"></textarea>
+			</p></br>
+	
+			<p>	<input type="submit" value="Envoyer"><input type="reset" value="Effacer"/></p>
+		
+		</form>		
+</div>
+  
+</body>
+</html>
+
